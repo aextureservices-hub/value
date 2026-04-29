@@ -2,13 +2,18 @@ import { useState, useRef } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 import './../CSS/Gallerypage.css'
 
+// ✅ Import local images — Vite handles these correctly in production
+import room1 from '../../assets/room1.jpeg'
+import room2 from '../../assets/room2.jpeg'
+import room3 from '../../assets/room3.jpeg'
 
 const categories = ['All', 'Rooms', 'Decorations', 'Rooftop Café']
 
 const images = [
-  { src: 'value/public/room6.jpeg', cat: 'Rooms', title: 'Deluxe Suite', size: 'tall' },
-  { src: 'value/public/room1.jpeg', cat: 'Rooms', title: 'Premium Room', size: '' },
-  { src: 'value/public/room3.jpeg', cat: 'Rooms', title: 'Presidential Suite', size: '' },
+  { src: room1, cat: 'Rooms', title: 'Deluxe Suite', size: 'tall' },
+  { src: room2, cat: 'Rooms', title: 'Premium Room', size: '' },
+  { src: room3, cat: 'Rooms', title: 'Presidential Suite', size: '' },
+  // ✅ Unsplash URLs are fine as-is (external URLs always work)
   { src: 'https://images.unsplash.com/photo-1478146059778-26028b07395a?w=900&q=85&auto=format&fit=crop', cat: 'Decorations', title: 'Birthday Setup', size: 'tall' },
   { src: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=900&q=85&auto=format&fit=crop', cat: 'Decorations', title: 'Floral Arrangement', size: '' },
   { src: 'https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=900&q=85&auto=format&fit=crop', cat: 'Decorations', title: 'Anniversary Decor', size: '' },
@@ -66,7 +71,6 @@ export function GalleryPage() {
       {/* Gallery */}
       <section className="gallery-section">
         <div className="container">
-          {/* Tabs */}
           <div className="gallery-tabs">
             {categories.map(cat => (
               <button
@@ -79,7 +83,6 @@ export function GalleryPage() {
             ))}
           </div>
 
-          {/* Grid */}
           <motion.div
             className="gallery-grid"
             key={activeTab}
@@ -88,7 +91,7 @@ export function GalleryPage() {
             transition={{ duration: 0.4 }}
           >
             {filtered.map((img, i) => (
-              <GalleryItem key={img.src} img={img} index={i} onClick={() => setLightbox(i)} />
+              <GalleryItem key={i} img={img} index={i} onClick={() => setLightbox(i)} />
             ))}
           </motion.div>
         </div>
