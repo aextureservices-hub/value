@@ -5,15 +5,15 @@ import './../CSS/HeroSection.css'
 
 const slides = [
   {
-    img: 'src/assets/room2.jpeg',
+    img: 'value/src/assets/room2.jpeg',
     label: 'Hotel Exterior',
   },
   {
-    img: 'src/assets/room6.jpeg',
+    img: 'value/src/assets/room6.jpeg',
     label: 'Luxury Suite',
   },
   {
-    img: 'src/assets/room3.jpeg',
+    img: 'value/src/assets/room3.jpeg',
     label: 'Rooftop Experience',
   },
 ]
