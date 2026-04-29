@@ -9,11 +9,11 @@ const slides = [
     label: 'Hotel Exterior',
   },
   {
-    img: 'value/src/assets/room6.jpeg',
+    img: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAGYvfrhH7w1f-hyA6NoTMDKAIPcvIXp30qsCRxpV_IxrgmHyXeeUJg9HvfSJNTaicxFTrddpyJllVhIohCGHYSzKfuUZMyosBuga3zsNhISw9EegesYXIGQA-GRPReahpu6_O5kBg=s1360-w1360-h1020-rw',
     label: 'Luxury Suite',
   },
   {
-    img: 'value/src/assets/room3.jpeg',
+    img: 'src/assets/room3.jpeg',
     label: 'Rooftop Experience',
   },
 ]

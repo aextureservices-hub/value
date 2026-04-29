@@ -7,7 +7,7 @@ const categories = ['All', 'Rooms', 'Decorations', 'Rooftop Café']
 const images = [
   { src: 'src/assets/room6.jpeg', cat: 'Rooms', title: 'Deluxe Suite', size: 'tall' },
   { src: 'src/assets/room1.jpeg', cat: 'Rooms', title: 'Premium Room', size: '' },
-  { src: 'src/assets/room3.jpeg', cat: 'Rooms', title: 'Presidential Suite', size: '' },
+  { src: '../value/src/assets/room3.jpeg', cat: 'Rooms', title: 'Presidential Suite', size: '' },
   { src: 'https://images.unsplash.com/photo-1478146059778-26028b07395a?w=900&q=85&auto=format&fit=crop', cat: 'Decorations', title: 'Birthday Setup', size: 'tall' },
   { src: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=900&q=85&auto=format&fit=crop', cat: 'Decorations', title: 'Floral Arrangement', size: '' },
   { src: 'https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=900&q=85&auto=format&fit=crop', cat: 'Decorations', title: 'Anniversary Decor', size: '' },
