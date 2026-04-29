@@ -2,26 +2,29 @@ import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, useInView } from 'framer-motion'
 import './../CSS/Roomssection.css'
+import Deluxe from '../../assets/room2.jpeg'
+import Premium from '../../assets/room4.jpeg'
+import Suite from '../../assets/room6.jpeg'
 
 const rooms = [
   {
     title: 'Deluxe Room',
     desc: 'A sanctuary of calm. Our Deluxe Rooms blend classic elegance with every modern comfort.',
-    img: 'value/src/assets/room4.jpeg',
+    img: Deluxe,
     price: '₹1099',
     tag: 'Most Popular',
   },
   {
     title: 'Premium Room',
     desc: 'Elevated living with panoramic city views, bespoke furnishings, and a private lounge.',
-    img: 'value/src/assets/room5.jpeg',
+    img: Premium,
     price: '₹1299',
     tag: 'Elevated',
   },
   {
     title: 'Suite Room',
     desc: 'The pinnacle of indulgence. A full suite experience with butler service and a Jacuzzi.',
-    img: 'value/src/assets/room6.jpeg',
+    img: Suite,
     price: '₹1399',
     tag: 'Signature',
   },
