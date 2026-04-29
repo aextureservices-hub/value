@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import './../CSS/Navbar.css'
+import logo from '../../assets/logo.jpeg'
 
 const links = [
   { label: 'Home', to: '/' },
@@ -29,7 +30,7 @@ export function Navbar({ scrolled }: NavbarProps) {
           {/* Logo — LEFT */}
           <Link to="/" className="navbar__logo" onClick={() => setOpen(false)}>
             <img
-              src="src\assets\logo.jpeg"
+              src={logo}
               alt="The Value Hotel & Suites"
               className="navbar__logo-img"
             />

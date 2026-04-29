@@ -2,19 +2,22 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import './../CSS/HeroSection.css'
+import welcome from '../../assets/welcom.jpeg'
+import room2 from '../../assets/room2.jpeg'
+import room3 from '../../assets/room3.jpeg'
 
 
 const slides = [
   {
-    img: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAEya_eBOhMX2fDBnUtsBob6aCGUXmgqRZcrKeWVTgQEv-E_VG8UwF1FTp0pNLWk3yedNF7mhbQ9opUltzzDI2FQBPd3clxIuKJy_9K7a62CPLxKmCR8ydsTNanGLBLKeLfRZbU=s1360-w1360-h1020-rw',
+    img: welcome,
     label: 'Hotel Exterior',
   },
   {
-    img: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAGYvfrhH7w1f-hyA6NoTMDKAIPcvIXp30qsCRxpV_IxrgmHyXeeUJg9HvfSJNTaicxFTrddpyJllVhIohCGHYSzKfuUZMyosBuga3zsNhISw9EegesYXIGQA-GRPReahpu6_O5kBg=s1360-w1360-h1020-rw',
+    img: room3,
     label: 'Luxury Suite',
   },
   {
-    img: 'value/public/room3.jpeg',
+    img: room2,
     label: 'Rooftop Experience',
   },
 ]
