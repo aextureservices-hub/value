@@ -29,7 +29,7 @@ export function Navbar({ scrolled }: NavbarProps) {
           {/* Logo — LEFT */}
           <Link to="/" className="navbar__logo" onClick={() => setOpen(false)}>
             <img
-              src="https://github.com/aextureservices-hub/value/blob/main/value/src/assets/logo.jpeg"
+              src="src\assets\logo.jpeg"
               alt="The Value Hotel & Suites"
               className="navbar__logo-img"
             />
