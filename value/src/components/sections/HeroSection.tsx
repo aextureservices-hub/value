@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import './../CSS/HeroSection.css'
 
+
 const slides = [
   {
     img: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAEya_eBOhMX2fDBnUtsBob6aCGUXmgqRZcrKeWVTgQEv-E_VG8UwF1FTp0pNLWk3yedNF7mhbQ9opUltzzDI2FQBPd3clxIuKJy_9K7a62CPLxKmCR8ydsTNanGLBLKeLfRZbU=s1360-w1360-h1020-rw',
@@ -13,7 +14,7 @@ const slides = [
     label: 'Luxury Suite',
   },
   {
-    img: 'src/assets/room3.jpeg',
+    img: 'value/public/room3.jpeg',
     label: 'Rooftop Experience',
   },
 ]

@@ -3,8 +3,8 @@ import { motion, useInView, AnimatePresence } from 'framer-motion'
 import './../CSS/Gallerypage.css'
 
 // ✅ Import local images — Vite handles these correctly in production
-import room1 from '../../assets/room1.jpeg'
-import room2 from '../../assets/room2.jpeg'
+import room1 from '../../assets/room6.jpeg'
+import room2 from '../../assets/room1.jpeg'
 import room3 from '../../assets/room3.jpeg'
 
 const categories = ['All', 'Rooms', 'Decorations', 'Rooftop Café']
