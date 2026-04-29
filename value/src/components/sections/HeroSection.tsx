@@ -5,7 +5,7 @@ import './../CSS/HeroSection.css'
 
 const slides = [
   {
-    img: 'value/src/assets/room2.jpeg',
+    img: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAEya_eBOhMX2fDBnUtsBob6aCGUXmgqRZcrKeWVTgQEv-E_VG8UwF1FTp0pNLWk3yedNF7mhbQ9opUltzzDI2FQBPd3clxIuKJy_9K7a62CPLxKmCR8ydsTNanGLBLKeLfRZbU=s1360-w1360-h1020-rw',
     label: 'Hotel Exterior',
   },
   {
