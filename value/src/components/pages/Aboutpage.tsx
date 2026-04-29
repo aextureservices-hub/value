@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, useInView } from 'framer-motion'
-import './AboutPage.css'
+import './../CSS/Aboutpage.css'
 
 const values = [
   { icon: '✦', title: 'Excellence', desc: 'Every detail, no matter how small, is an opportunity to exceed expectations.' },

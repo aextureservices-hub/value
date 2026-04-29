@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, useInView } from 'framer-motion'
-import './RoomsSection.css'
+import './../CSS/Roomssection.css'
 
 const rooms = [
   {

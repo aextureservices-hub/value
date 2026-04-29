@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
-import './TestimonialsSection.css'
+import './../CSS/TestimonialsSection.css'
 
 const testimonials = [
   {

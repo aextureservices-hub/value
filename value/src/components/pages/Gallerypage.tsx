@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
-import './GalleryPage.css'
+import './../CSS/Gallerypage.css'
 
 const categories = ['All', 'Rooms', 'Decorations', 'Rooftop Café']
 

@@ -6,7 +6,7 @@ import { AmenitiesSection } from '../sections/Amenitiessection'
 import { GalleryPreview } from '../sections/Gallerypreview'
 import { TestimonialsSection } from '../sections/TestimonialsSection'
 import { CTABanner } from '../sections/Ctabanner'
-import './Homepage.css'
+import './../CSS/Homepage.css'
 export function HomePage() {
   return (
     <motion.div

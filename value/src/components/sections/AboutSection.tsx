@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, useInView } from 'framer-motion'
-import "./AboutSection.css"
+import "./../CSS/AboutSection.css"
 
 export function AboutSection() {
   const ref = useRef(null)

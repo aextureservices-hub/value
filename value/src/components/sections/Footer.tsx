@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './Footer.css'
+import './../CSS/Footer.css'
 
 const socials = [
   { label: 'IG', href: '#', full: 'Instagram' },

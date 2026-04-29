@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, useInView } from 'framer-motion'
-import './GalleryPreview.css'
+import './../CSS/Gallerypreview.css'
 
 const images = [
   { src: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=700&q=80&auto=format&fit=crop', span: 'tall', alt: 'Hotel lobby' },

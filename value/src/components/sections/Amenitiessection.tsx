@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import './AmenitiesSection.css'
+import './../CSS/Amenitiessection.css'
 
 const amenities = [
   {
