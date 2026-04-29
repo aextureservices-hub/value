@@ -1,0 +1,75 @@
+.whatsapp-fab {
+  /* Fixed positioning with safe area insets for Android/iOS */
+  position: fixed;
+  bottom: calc(1.5rem + env(safe-area-inset-bottom));
+  right: 1.5rem;
+
+  /* Stack above everything including mobile nav bars */
+  z-index: 99999;
+
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+
+  background: #25d366;
+  color: #fff;
+  padding: 0.8rem 1.3rem 0.8rem 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+
+  font-family: 'Jost', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+
+  box-shadow:
+    0 4px 20px rgba(37, 211, 102, 0.35),
+    0 2px 8px rgba(0, 0, 0, 0.25);
+
+  /* Prevent text selection on tap-hold */
+  -webkit-user-select: none;
+  user-select: none;
+
+  /* Prevent tap highlight flash on Android */
+  -webkit-tap-highlight-color: transparent;
+
+  /* Force GPU layer — fixes rendering bugs on Android Chrome */
+  transform: translateZ(0);
+  will-change: transform;
+
+  transition: box-shadow 0.3s ease;
+}
+
+.whatsapp-fab:hover {
+  box-shadow:
+    0 8px 32px rgba(37, 211, 102, 0.5),
+    0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.whatsapp-fab__icon {
+  flex-shrink: 0;
+  display: block;
+}
+
+.whatsapp-fab__label {
+  display: inline;
+  white-space: nowrap;
+}
+
+/* ── Mobile: icon-only circle ── */
+@media (max-width: 500px) {
+  .whatsapp-fab {
+    /* Larger tap target on mobile */
+    padding: 1rem;
+    border-radius: 50%;
+
+    /* Move up more to avoid Android bottom nav bar */
+    bottom: 6rem;
+    right: 1.25rem;
+  }
+
+  .whatsapp-fab__label {
+    display: none;
+  }
+}
+

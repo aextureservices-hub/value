@@ -1,0 +1,384 @@
+/* ═══════════════════════════════════════════════
+   Footer.css — Gen Z Luxury Editorial
+═══════════════════════════════════════════════ */
+
+:root {
+  --f-gold:     #c9a84c;
+  --f-gold-dim: rgba(201,168,76,0.12);
+  --f-black:    #060606;
+  --f-silver:   #c8c0b5;
+  --f-muted:    #4a4540;
+  --f-card:     rgba(255,255,255,0.03);
+}
+
+.footer {
+  background: var(--f-black);
+  border-top: 1px solid var(--f-gold-dim);
+  overflow: hidden;
+}
+
+/* ── Marquee ticker ─────────────────────────── */
+.footer__ticker {
+  width: 100%;
+  border-bottom: 1px solid var(--f-gold-dim);
+  overflow: hidden;
+  padding: 0.9rem 0;
+  background: rgba(201,168,76,0.03);
+}
+
+.footer__ticker-track {
+  display: flex;
+  gap: 0;
+  width: max-content;
+  animation: ticker-scroll 28s linear infinite;
+}
+
+.footer__ticker-item {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--f-muted);
+  white-space: nowrap;
+  padding: 0 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.footer__ticker-dot {
+  color: var(--f-gold);
+  font-size: 0.45rem;
+}
+
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ── Hero band ──────────────────────────────── */
+.footer__hero {
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.footer__hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 1px;
+  background: var(--f-gold);
+}
+
+.footer__hero-eyebrow {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.55rem;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  color: var(--f-muted);
+  margin-bottom: 1rem;
+}
+
+.footer__hero-headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(4.5rem, 14vw, 9rem);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  line-height: 0.9;
+  color: var(--f-silver);
+  margin: 0 0 1rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.4em;
+}
+
+.footer__hero-gold {
+  color: var(--f-gold);
+  font-style: italic;
+}
+
+.footer__hero-sub {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.58rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--f-muted);
+}
+
+/* ── Main grid ──────────────────────────────── */
+.footer__main {
+  padding: 3.5rem 0 3rem;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1.5fr;
+  gap: 2.5rem;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+/* Brand */
+.footer__brand {}
+
+.footer__desc {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.9;
+  color: var(--f-muted);
+  font-weight: 300;
+  max-width: 260px;
+  margin-bottom: 2rem;
+}
+
+/* Socials */
+.footer__socials {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.footer__social {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--f-gold-dim);
+  background: var(--f-card);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--f-muted);
+  text-decoration: none;
+  transition: border-color 0.3s, color 0.3s, background 0.35s, transform 0.3s;
+}
+
+.footer__social:hover {
+  border-color: var(--f-gold);
+  color: var(--f-gold);
+  background: rgba(201,168,76,0.08);
+  transform: translateY(-3px);
+}
+
+/* Nav columns */
+.footer__col-title {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.55rem;
+  font-weight: 600;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--f-gold);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--f-gold-dim);
+}
+
+.footer__col ul {
+  list-style: none;
+  margin: 0; padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer__col ul li a {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.78rem;
+  color: var(--f-muted);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s, gap 0.3s;
+}
+
+.footer__link-arrow {
+  font-size: 0.7rem;
+  color: var(--f-gold);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.3s, transform 0.3s;
+  display: inline-block;
+}
+
+.footer__col ul li a:hover {
+  color: var(--f-silver);
+  gap: 0.75rem;
+}
+
+.footer__col ul li a:hover .footer__link-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Contact card */
+.footer__contact-card {
+  background: var(--f-card);
+  border: 1px solid var(--f-gold-dim);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.footer__contact-row {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 0.75rem 0;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.75rem;
+  color: var(--f-muted);
+  line-height: 1.6;
+}
+
+.footer__contact-label {
+  font-size: 0.52rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  color: var(--f-gold);
+  white-space: nowrap;
+  padding-top: 2px;
+  min-width: 32px;
+}
+
+.footer__contact-row a {
+  color: var(--f-muted);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer__contact-row a:hover { color: var(--f-gold); }
+
+.footer__contact-divider {
+  height: 1px;
+  background: var(--f-gold-dim);
+}
+
+.footer__contact-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 0 7.1rem;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--f-gold);
+  text-decoration: none;
+  transition: letter-spacing 0.3s, opacity 0.3s;
+}
+
+.footer__contact-cta span {
+  font-size: 1rem;
+  transition: transform 0.3s;
+}
+
+.footer__contact-cta:hover {
+  letter-spacing: 0.35em;
+  opacity: 0.8;
+}
+
+.footer__contact-cta:hover span { transform: translate(2px, -2px); }
+
+/* ── Bottom bar ─────────────────────────────── */
+.footer__bottom {
+  border-top: 1px solid rgba(255,255,255,0.04);
+  padding: 1.4rem 0;
+}
+
+.footer__bottom-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.62rem;
+  color: #2e2a26;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.footer__bottom-dot {
+  width: 3px; height: 3px;
+  background: var(--f-gold);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.footer__bottom-diamond { color: var(--f-gold); }
+
+/* ══════════════════════════════
+   MOBILE — Gen Z first layout
+══════════════════════════════ */
+@media (max-width: 900px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+
+  .footer__brand {
+    grid-column: span 2;
+  }
+
+  .footer__desc { max-width: 100%; }
+
+  .footer__col--contact {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__hero {
+    padding: 3rem 1.5rem 2.5rem;
+  }
+
+  .footer__hero-headline {
+    flex-direction: column;
+    gap: 0;
+    font-size: clamp(4rem, 20vw, 6rem);
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1.25rem;
+  }
+
+  .footer__brand,
+  .footer__col--contact {
+    grid-column: unset;
+  }
+
+  .footer__main { padding: 2.5rem 0 2rem; }
+
+  .footer__bottom-inner {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 0 1.25rem;
+  }
+
+  .footer__bottom-dot { display: none; }
+
+  .footer__socials { gap: 0.4rem; }
+
+  .footer__social { width: 46px; height: 46px; } /* bigger tap targets */
+
+  .footer__ticker-item { font-size: 0.55rem; padding: 0 1.5rem; }
+}
